@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080916">
+
+    <title>SKILLVERSE - Unlock Your Potential</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="script.js" defer></script>
+    <script src="supabase-auth.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <h1>SKILLVERSE</h1>
+        <p>Unlock Your Potential</p>
+    </div>
+    <button class="profile-btn">My Profile</button>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#learn">Learn</a>
+    <a href="#practice">Practice</a>
+    <a href="#projects">Projects</a>
+</nav>
+
+<main>
+
+    <!-- HOME -->
+    <section id="home" class="hero">
+        <h2>Welcome to SKILLVERSE</h2>
+        <p>Learn new skills. Build your future. Explore endless possibilities.</p>
+        <a href="#learn" class="btn">Start Learning</a>
+    </section>
+
+    <!-- LEARNING SECTION -->
+    <section id="learn" class="section">
+        <h2>Explore Learning Paths</h2>
+        <p>Choose a learning path and start your journey.</p>
+
+        <div class="cards">
+
+            <!-- TECHNOLOGY -->
+            <details class="card">
+                <summary>
+                    <h3>💻 Technology</h3>
+                    <p>Learn computers, coding, internet and digital skills.</p>
+                </summary>
+
+                <div class="lesson-content">
+                    <h3>Technology Learning Path</h3>
+                    <p>Complete these 10 beginner-friendly lessons.</p>
+
+                    <ol>
+                        <li>Introduction to Computers</li>
+                        <li>How the Internet Works</li>
+                        <li>HTML Basics</li>
+                        <li>CSS Basics</li>
+                        <li>JavaScript Introduction</li>
+                        <li>Programming Fundamentals</li>
+                        <li>Computer Networks</li>
+                        <li>Cybersecurity Basics</li>
+                        <li>Databases and Data</li>
+                        <li>Building Your First Website</li>
+                    </ol>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 1: Introduction to Computers</summary>
+                        <h4>English Explanation</h4>
+                        <p>A computer is an electronic device that accepts data, processes it and produces useful information. Main parts include the CPU, monitor, keyboard, mouse and storage.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Computer ek electronic machine hai jo data receive karta hai, process karta hai aur result deta hai. Iske main parts CPU, monitor, keyboard, mouse aur storage hain.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>Computer eka electronic machine. Eha data grahana kare, process kare ebam result deithae. Ehar mukhya anga CPU, monitor, keyboard, mouse ebam storage.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What is a computer? <strong>Answer:</strong> An electronic device.</li>
+                            <li>Which part processes instructions? <strong>Answer:</strong> CPU.</li>
+                            <li>Which device is used for typing? <strong>Answer:</strong> Keyboard.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 2: How the Internet Works</summary>
+                        <h4>English Explanation</h4>
+                        <p>The internet is a worldwide network connecting computers and devices. It helps us browse websites, send emails, watch videos and communicate. A browser is an application used to open websites.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Internet duniya bhar ke computers aur devices ka network hai. Iski madad se hum websites dekh sakte hain, email bhej sakte hain aur online communication kar sakte hain. Browser se websites open hoti hain.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>Internet hela sara dunia ra computer ebam device mananku joduthiba network. Eha dwara ame website dekhi, email pathai ebam jogajoga karipariba.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What is the internet? <strong>Answer:</strong> A worldwide network.</li>
+                            <li>Name one web browser. <strong>Answer:</strong> Google Chrome.</li>
+                            <li>What is a website? <strong>Answer:</strong> A collection of related web pages.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 3: HTML Basics</summary>
+                        <h4>English Explanation</h4>
+                        <p>HTML stands for HyperText Markup Language. It creates the structure of web pages using tags such as headings, paragraphs, images and links.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>HTML ka full form HyperText Markup Language hai. Iska use website ka structure banane ke liye hota hai. Ismein heading, paragraph, image aur link tags hote hain.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>HTML ra full form HyperText Markup Language. Eha website ra structure tiari kare. Ethire heading, paragraph, image ebam link pain tags rahithae.</p>
+                        <h4>Example</h4>
+                        <pre><code>&lt;h1&gt;Hello World&lt;/h1&gt;
+&lt;p&gt;My first website.&lt;/p&gt;</code></pre>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What is the full form of HTML? <strong>Answer:</strong> HyperText Markup Language.</li>
+                            <li>Which tag creates a heading? <strong>Answer:</strong> <code>&lt;h1&gt;</code>.</li>
+                            <li>Which tag creates a paragraph? <strong>Answer:</strong> <code>&lt;p&gt;</code>.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 4: CSS Basics</summary>
+                        <h4>English Explanation</h4>
+                        <p>CSS stands for Cascading Style Sheets. It styles HTML pages by controlling colors, fonts, spacing, borders and layouts.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>CSS ka full form Cascading Style Sheets hai. Iska use website ko design aur attractive banane ke liye hota hai. Isse colors, fonts, spacing aur layout change kar sakte hain.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>CSS ra full form Cascading Style Sheets. Eha website ku sundara kare. Eha dwara color, font, spacing ebam layout badala jaipare.</p>
+                        <h4>Example</h4>
+                        <pre><code>h1 {
+    color: purple;
+    text-align: center;
+}</code></pre>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What is the full form of CSS? <strong>Answer:</strong> Cascading Style Sheets.</li>
+                            <li>What does CSS control? <strong>Answer:</strong> Website appearance.</li>
+                            <li>Which property changes text color? <strong>Answer:</strong> color.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 5: JavaScript Introduction</summary>
+                        <h4>English Explanation</h4>
+                        <p>JavaScript is a programming language used to make websites interactive. It can respond to button clicks, validate forms and update website content.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>JavaScript ek programming language hai jo website ko interactive banati hai. Isse buttons kaam karte hain aur website par dynamic changes hote hain.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>JavaScript eka programming language, jaha website ku interactive kare. Button click, form checking ebam website re paribartana pain eha byabahara hue.</p>
+                        <h4>Example</h4>
+                        <pre><code>let name = "Student";
+alert("Hello " + name);</code></pre>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What is JavaScript? <strong>Answer:</strong> A programming language.</li>
+                            <li>What does it make websites? <strong>Answer:</strong> Interactive.</li>
+                            <li>Which command displays a popup? <strong>Answer:</strong> alert().</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 6: Programming Fundamentals</summary>
+                        <h4>English Explanation</h4>
+                        <p>Programming means giving instructions to a computer. A variable stores information, a condition helps make decisions and a loop repeats instructions.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Programming ka matlab computer ko instructions dena hai. Variable data store karta hai, condition decision leti hai aur loop instructions repeat karta hai.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>Programming mane computer ku nirdesha deba. Variable data rakhe, condition decision neithae ebam loop nirdesha ku punarabrutti kare.</p>
+                        <h4>Example</h4>
+                        <pre><code>let age = 18;
+
+if (age >= 18) {
+    console.log("Adult");
+}</code></pre>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What is programming? <strong>Answer:</strong> Giving instructions to a computer.</li>
+                            <li>What stores data? <strong>Answer:</strong> A variable.</li>
+                            <li>What repeats instructions? <strong>Answer:</strong> A loop.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 7: Computer Networks</summary>
+                        <h4>English Explanation</h4>
+                        <p>A computer network connects two or more devices so they can share information and resources. LAN covers a small area, while WAN covers a larger area.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Computer network do ya usse zyada devices ko connect karta hai, jisse information share hoti hai. LAN chhote area mein aur WAN bade area mein use hota hai.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>Computer network dui ba adhika device ku jodithae, jahadwara information share hue. LAN chhota area pain ebam WAN bada area pain byabahara hue.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What is a network? <strong>Answer:</strong> Connected devices sharing information.</li>
+                            <li>What is the full form of LAN? <strong>Answer:</strong> Local Area Network.</li>
+                            <li>Which network covers a large area? <strong>Answer:</strong> WAN.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 8: Cybersecurity Basics</summary>
+                        <h4>English Explanation</h4>
+                        <p>Cybersecurity means protecting computers, networks and personal information from digital threats. Use strong passwords, enable two-factor authentication and avoid suspicious links.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Cybersecurity ka matlab computers, networks aur personal information ko online dangers se protect karna hai. Strong password rakhein aur unknown links se bachein.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>Cybersecurity mane computer, network ebam nijara information ku online bipadaru surakshita rakhiba. Strong password byabahara karantu ebam ajana link click karantu nahin.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What is cybersecurity? <strong>Answer:</strong> Protection from digital threats.</li>
+                            <li>Should you share your password? <strong>Answer:</strong> No.</li>
+                            <li>Name one way to secure an account. <strong>Answer:</strong> Two-factor authentication.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 9: Databases and Data</summary>
+                        <h4>English Explanation</h4>
+                        <p>Data means facts or information. A database is an organized collection of data. Databases help applications store, find, update and manage information.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Data ka matlab facts ya information hota hai. Database data ka organized collection hota hai. Applications database se information save aur manage karti hain.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>Data mane tathya ba information. Database hela sajadi rakha jaithiba data ra sangraha. Application database dwara information save ebam manage kare.</p>
+                        <h4>Practical Example</h4>
+                        <p>A school database may store student names, roll numbers and class details.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What is data? <strong>Answer:</strong> Facts or information.</li>
+                            <li>What is a database? <strong>Answer:</strong> An organized collection of data.</li>
+                            <li>Where can databases be used? <strong>Answer:</strong> Schools, banks and websites.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 10: Building Your First Website</summary>
+                        <h4>English Explanation</h4>
+                        <p>A website can be created using HTML, CSS and JavaScript. HTML creates structure, CSS controls design and JavaScript adds interaction.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Website HTML, CSS aur JavaScript ki madad se banayi ja sakti hai. HTML structure, CSS design aur JavaScript interaction add karta hai.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>HTML, CSS ebam JavaScript dwara website tiari hue. HTML structure, CSS design ebam JavaScript interaction jog kare.</p>
+                        <h4>Mini Project</h4>
+                        <p>Create a personal webpage with your name, a short introduction and a button.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>Which language creates webpage structure? <strong>Answer:</strong> HTML.</li>
+                            <li>Which language styles a webpage? <strong>Answer:</strong> CSS.</li>
+                            <li>Which language adds interaction? <strong>Answer:</strong> JavaScript.</li>
+                        </ol>
+                    </details>
+
+                    <p><strong>Congratulations!</strong> You have completed the 10 Technology lessons.</p>
+                </div>
+            </details>
+
+            <!-- ARTIFICIAL INTELLIGENCE -->
+            <details class="card">
+                <summary>
+                    <h3>🤖 Artificial Intelligence</h3>
+                    <p>Explore AI tools and intelligent technology.</p>
+                </summary>
+
+                <div class="lesson-content">
+                    <h3>AI Learning Path</h3>
+                    <p>Complete these 10 beginner-friendly AI lessons.</p>
+                    <ol>
+                        <li>Introduction to Artificial Intelligence</li>
+                        <li>Machine Learning Basics</li>
+                        <li>Understanding Data in AI</li>
+                        <li>Types of Machine Learning</li>
+                        <li>Neural Networks Basics</li>
+                        <li>Natural Language Processing</li>
+                        <li>Understanding AI Chatbots</li>
+                        <li>Generative AI and Creativity</li>
+                        <li>Writing Effective AI Prompts</li>
+                        <li>Responsible and Ethical AI</li>
+                    </ol>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 1: Introduction to Artificial Intelligence</summary>
+                        <h4>English Explanation</h4>
+                        <p>Artificial Intelligence (AI) is a branch of computer science that develops systems capable of performing tasks that usually require human intelligence. AI can recognize images, understand language and make predictions.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Artificial Intelligence ya AI computer science ki branch hai. Ismein aise computer systems banaye jaate hain jo insaani intelligence se jude kuch kaam kar sakte hain.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>Artificial Intelligence ba AI hela computer science ra eka branch. Eha emiti computer system tiari kare, jaha manisha buddhi sahita jadita kichhi kama karipare.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What does AI stand for? <strong>Answer:</strong> Artificial Intelligence.</li>
+                            <li>Can AI help recognize images? <strong>Answer:</strong> Yes.</li>
+                            <li>Name one AI application. <strong>Answer:</strong> A voice assistant.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 2: Machine Learning Basics</summary>
+                        <h4>English Explanation</h4>
+                        <p>Machine Learning (ML) is a part of AI that allows computers to learn patterns from data and improve their performance using examples.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Machine Learning, AI ka ek hissa hai. Ismein computer data se patterns seekhta hai aur examples ki madad se apna performance improve karta hai.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>Machine Learning hela AI ra eka ansha. Ethire computer data ru pattern shikhe ebam example dwara nijara kama unnata kare.</p>
+                        <h4>Practical Example</h4>
+                        <p>An email system learns to identify unwanted messages as spam.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What is ML? <strong>Answer:</strong> A part of AI.</li>
+                            <li>What does ML learn from? <strong>Answer:</strong> Data.</li>
+                            <li>Give one ML example. <strong>Answer:</strong> Email spam detection.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 3: Understanding Data in AI</summary>
+                        <h4>English Explanation</h4>
+                        <p>Data is information used by AI systems to learn patterns, make predictions and generate results. Data can include text, numbers, images, audio and videos.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Data woh information hai jiska use AI systems patterns seekhne, predictions karne aur results generate karne ke liye karte hain. Data mein text, numbers, images, audio aur videos ho sakte hain.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>Data hela sehi information, jahaku AI system pattern shikhiba ebam prediction kariba pain byabahara kare. Data re text, number, image, audio ebam video rahipare.</p>
+                        <h4>Practical Example</h4>
+                        <p>A weather system may use past temperature and rainfall data.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What is data? <strong>Answer:</strong> Information used by a system.</li>
+                            <li>Name two types of data. <strong>Answer:</strong> Text and images.</li>
+                            <li>Why is data quality important? <strong>Answer:</strong> It can affect AI results.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 4: Types of Machine Learning</summary>
+                        <h4>English Explanation</h4>
+                        <p>Three common types are supervised learning, unsupervised learning and reinforcement learning. Supervised learning uses labeled examples, unsupervised learning finds patterns and reinforcement learning learns through feedback and rewards.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Machine Learning ke teen common types supervised, unsupervised aur reinforcement learning hain. Supervised labeled examples use karta hai, unsupervised patterns dhoondhta hai aur reinforcement feedback se seekhta hai.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>Machine Learning ra tinoti prakara hela supervised, unsupervised ebam reinforcement learning. Supervised labeled example byabahara kare, unsupervised pattern khoje ebam reinforcement feedback ru shikhe.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>Name one type of ML. <strong>Answer:</strong> Supervised learning.</li>
+                            <li>Which learning uses labeled examples? <strong>Answer:</strong> Supervised learning.</li>
+                            <li>Which learning uses rewards? <strong>Answer:</strong> Reinforcement learning.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 5: Neural Networks Basics</summary>
+                        <h4>English Explanation</h4>
+                        <p>A neural network is a computer model inspired by connected neurons in the human brain. It processes information through connected units called artificial neurons.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Neural Network ek computer model hai jo human brain ke connected neurons se prerit hai. Ismein artificial neurons information process karte hain.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>Neural Network eka computer model, jaha manisha mastiska ra neuron dwara prerita. Ethire artificial neuron information process kare.</p>
+                        <h4>Practical Example</h4>
+                        <p>A neural network can learn to recognize handwritten numbers in images.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What is a neural network? <strong>Answer:</strong> An AI model inspired by connected brain neurons.</li>
+                            <li>What are its units called? <strong>Answer:</strong> Artificial neurons.</li>
+                            <li>Name one application. <strong>Answer:</strong> Image recognition.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 6: Natural Language Processing</summary>
+                        <h4>English Explanation</h4>
+                        <p>Natural Language Processing (NLP) helps computers work with human language. It is used in translation, text summarization, sentiment analysis and speech recognition.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>NLP AI ka ek area hai jo computers ko insaani language ke saath kaam karne mein madad karta hai. Iska use translation, text summary aur speech recognition mein hota hai.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>NLP hela AI ra eka kshetra, jaha computer ku manisha bhasa sahita kama karibare sahajya kare. Eha translation ebam speech recognition pain byabahara hue.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What does NLP stand for? <strong>Answer:</strong> Natural Language Processing.</li>
+                            <li>What does NLP help computers process? <strong>Answer:</strong> Human language.</li>
+                            <li>Name one NLP application. <strong>Answer:</strong> Language translation.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 7: Understanding AI Chatbots</summary>
+                        <h4>English Explanation</h4>
+                        <p>An AI chatbot is software that communicates with people through text or voice. It can help with learning, customer support and finding information. Its answers should be checked for accuracy.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>AI chatbot ek software hai jo text ya voice ke through logon se baat karta hai. Ye learning aur information dhoondhne mein madad karta hai. Iske answers ki accuracy check karni chahiye.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>AI chatbot eka software, jaha text ba voice madhyamare lokanka sahita katha hue. Eha padhai ebam information khojibare sahajya kare. Answer ra satyata janch kariba uchit.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What is an AI chatbot? <strong>Answer:</strong> Software that communicates with people.</li>
+                            <li>How can chatbots communicate? <strong>Answer:</strong> Text or voice.</li>
+                            <li>Should chatbot answers always be trusted? <strong>Answer:</strong> No, they should be checked.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 8: Generative AI and Creativity</summary>
+                        <h4>English Explanation</h4>
+                        <p>Generative AI creates new content based on patterns learned from training data. It can generate text, images, audio and computer code.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Generative AI training data se seekhe patterns ke basis par naya content bana sakta hai. Ye text, images, audio aur computer code generate kar sakta hai.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>Generative AI training data ru shikhithiba pattern adharare nua content tiari kare. Eha text, image, audio ebam computer code generate karipare.</p>
+                        <h4>Practical Example</h4>
+                        <p>Use a generative AI tool to brainstorm ideas for an original school poster.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What is Generative AI? <strong>Answer:</strong> AI that creates new content.</li>
+                            <li>Name two types of content it can generate. <strong>Answer:</strong> Text and images.</li>
+                            <li>Can it help with creative projects? <strong>Answer:</strong> Yes.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 9: Writing Effective AI Prompts</summary>
+                        <h4>English Explanation</h4>
+                        <p>A prompt is an instruction or question given to an AI system. A good prompt clearly explains the task, provides context and describes the expected format.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Prompt ek instruction ya question hai jo AI ko diya jata hai. Achha prompt task ko clearly batata hai aur zaroori context deta hai.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>Prompt hela eka instruction ba question, jahaku AI ku diajae. Bhala prompt re kama spashta bhabare lekha jae ebam darkari context diajae.</p>
+                        <h4>Example</h4>
+                        <p><strong>Weak:</strong> Teach me science.</p>
+                        <p><strong>Better:</strong> Explain photosynthesis in simple English for a beginner and give three practice questions.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What is a prompt? <strong>Answer:</strong> An instruction or question given to AI.</li>
+                            <li>What makes a prompt useful? <strong>Answer:</strong> Clear instructions and relevant context.</li>
+                            <li>Should a prompt describe the expected answer? <strong>Answer:</strong> Yes.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 10: Responsible and Ethical AI</summary>
+                        <h4>English Explanation</h4>
+                        <p>Responsible AI means using AI carefully, fairly and safely. AI can make mistakes or provide outdated information. Protect personal information and verify important answers.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Responsible AI ka matlab AI ko dhyan se, fair tareeke se aur safely use karna hai. AI galti kar sakta hai. Personal information protect karein aur important answers verify karein.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>Responsible AI mane AI ku satarkata, nyaya ebam surakshita bhabare byabahara kariba. AI bhul karipare. Nijara information surakshita rakhantu ebam important answer janch karantu.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>Can AI make mistakes? <strong>Answer:</strong> Yes.</li>
+                            <li>Should you share private information unnecessarily? <strong>Answer:</strong> No.</li>
+                            <li>Why should AI answers be checked? <strong>Answer:</strong> They may be incorrect or outdated.</li>
+                        </ol>
+                    </details>
+
+                    <p><strong>Congratulations!</strong> You have completed the 10 AI lessons.</p>
+                </div>
+            </details>
+
+            <!-- CREATIVE SKILLS -->
+            <details class="card">
+                <summary>
+                    <h3>🎨 Creative Skills</h3>
+                    <p>Develop creativity and digital design skills.</p>
+                </summary>
+
+                <div class="lesson-content">
+                    <h3>Creative Learning Path</h3>
+                    <p>Complete these 10 beginner-friendly lessons.</p>
+                    <ol>
+                        <li>Introduction to Graphic Design</li>
+                        <li>Color Theory</li>
+                        <li>Typography Basics</li>
+                        <li>Digital Content Creation</li>
+                        <li>Creative Thinking</li>
+                        <li>Logo Design Basics</li>
+                        <li>Layout and Composition</li>
+                        <li>Image Editing Basics</li>
+                        <li>Video Editing Basics</li>
+                        <li>Building a Creative Portfolio</li>
+                    </ol>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 1: Introduction to Graphic Design</summary>
+                        <h4>English Explanation</h4>
+                        <p>Graphic design communicates ideas through images, colors, shapes and text. It is used for posters, logos, advertisements and websites.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Graphic Design ek kala hai jisme images, colors, shapes aur text ki madad se ideas ko visually present kiya jata hai.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>Graphic Design eka kala, jeunthire image, color, shape ebam text madhyamare idea ku prakasha karajae.</p>
+                        <h4>Practical Example</h4>
+                        <p>Create a school event poster using a clear heading, suitable colors and one relevant picture.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What is graphic design? <strong>Answer:</strong> Visual communication using design elements.</li>
+                            <li>Where is it used? <strong>Answer:</strong> Posters, logos and advertisements.</li>
+                            <li>Name two design elements. <strong>Answer:</strong> Colors and shapes.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 2: Color Theory</summary>
+                        <h4>English Explanation</h4>
+                        <p>Color theory explains how colors work together. In the traditional RYB model, red, yellow and blue are primary colors. Mixing them creates secondary colors such as green, orange and purple.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Color Theory batata hai ki colors ek saath kaise kaam karte hain. Traditional RYB model mein red, yellow aur blue primary colors hain. Inhe milane se green, orange aur purple bante hain.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>Color Theory re bibhinna color kemiti eka saha kama karanti taha shikha jae. RYB model re red, yellow ebam blue primary color. Ehi color mishile green, orange ebam purple hue.</p>
+                        <h4>Practical Example</h4>
+                        <p>Make an educational poster using blue and white colors.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>Name three primary colors in RYB. <strong>Answer:</strong> Red, yellow and blue.</li>
+                            <li>What color is made by blue and yellow? <strong>Answer:</strong> Green.</li>
+                            <li>Why is color theory useful? <strong>Answer:</strong> It helps create balanced designs.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 3: Typography Basics</summary>
+                        <h4>English Explanation</h4>
+                        <p>Typography is the art of arranging text so it is easy to read. It includes font styles, sizes, spacing and alignment.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Typography ka matlab text ko is tarah arrange karna hai ki woh padhne mein aasan lage. Ismein font style, size, spacing aur alignment shamil hain.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>Typography mane text ku emiti sajadiba, jahadwara taha padhibaku sahaja lage. Ethire font style, size, spacing ebam alignment rahithae.</p>
+                        <h4>Practical Example</h4>
+                        <p>Design a poster with a large heading, medium subheading and smaller body text.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What is typography? <strong>Answer:</strong> The art of arranging text.</li>
+                            <li>What does font size control? <strong>Answer:</strong> The size of text.</li>
+                            <li>What is text hierarchy? <strong>Answer:</strong> Organizing text by importance.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 4: Digital Content Creation</summary>
+                        <h4>English Explanation</h4>
+                        <p>Digital content creation means making useful content for digital platforms. Examples include social media posts, graphics, videos, presentations and articles.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Digital Content Creation ka matlab digital platforms ke liye useful content banana hai. Ismein social media posts, graphics, videos, presentations aur articles shamil hain.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>Digital Content Creation mane digital platform pain upayogi content tiari kariba. Ethire social media post, graphic, video, presentation ebam article rahipare.</p>
+                        <h4>Practical Example</h4>
+                        <p>Create an educational post explaining three benefits of computers.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What is digital content creation? <strong>Answer:</strong> Making content for digital platforms.</li>
+                            <li>Name two types of digital content. <strong>Answer:</strong> Videos and graphics.</li>
+                            <li>What makes content useful? <strong>Answer:</strong> A clear purpose and relevant information.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 5: Creative Thinking</summary>
+                        <h4>English Explanation</h4>
+                        <p>Creative thinking means developing new ideas and looking at problems from different points of view. Brainstorming and mind mapping are useful techniques.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Creative Thinking ka matlab naye ideas sochna aur problem ko alag nazariye se dekhna hai. Brainstorming aur mind mapping useful techniques hain.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>Creative Thinking mane nua idea bhabiba ebam samasya ku bibhinna drustikonaru dekhiba. Brainstorming ebam mind mapping upayogi technique.</p>
+                        <h4>Practical Example</h4>
+                        <p>Think of three different ways to reuse an empty cardboard box.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What is creative thinking? <strong>Answer:</strong> Developing new ideas.</li>
+                            <li>What is brainstorming? <strong>Answer:</strong> Generating many ideas about a topic.</li>
+                            <li>Name one creative thinking technique. <strong>Answer:</strong> Mind mapping.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 6: Logo Design Basics</summary>
+                        <h4>English Explanation</h4>
+                        <p>A logo is a visual symbol used to represent a brand, organization or project. A good logo should be simple and recognizable.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Logo ek visual symbol hota hai jo kisi brand, organization ya project ko represent karta hai. Achha logo simple aur pehchanne mein aasan hota hai.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>Logo eka visual symbol, jaha brand, organization ba project ku represent kare. Bhala logo sarala ebam sahajare chinhibara jogya heba uchit.</p>
+                        <h4>Practical Example</h4>
+                        <p>Create a logo for a school science club using a light bulb symbol.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What is a logo? <strong>Answer:</strong> A visual symbol representing a brand or organization.</li>
+                            <li>Name one element used in a logo. <strong>Answer:</strong> A symbol.</li>
+                            <li>What makes a logo effective? <strong>Answer:</strong> It is simple and recognizable.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 7: Layout and Composition</summary>
+                        <h4>English Explanation</h4>
+                        <p>Layout and composition are about arranging text, images and other elements on a page. Important principles include alignment, spacing, contrast and visual hierarchy.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Layout aur Composition ka matlab page par text, images aur doosre elements ko sahi tarike se arrange karna hai. Alignment, spacing aur contrast important principles hain.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>Layout ebam Composition mane page re text, image ebam anya element ku thik bhabare sajadiba. Alignment, spacing ebam contrast gurutwapurna principle.</p>
+                        <h4>Practical Example</h4>
+                        <p>Design a poster with the heading at the top, image in the middle and details at the bottom.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What is layout? <strong>Answer:</strong> Arrangement of elements on a page.</li>
+                            <li>Name one layout principle. <strong>Answer:</strong> Alignment.</li>
+                            <li>Why is spacing important? <strong>Answer:</strong> It makes a design easier to read.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 8: Image Editing Basics</summary>
+                        <h4>English Explanation</h4>
+                        <p>Image editing means changing a digital image to improve its appearance. Common edits include cropping, resizing and adjusting brightness or contrast. Use images you own or have permission to use.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Image Editing ka matlab digital image mein changes karke uski appearance improve karna hai. Ismein cropping, resizing aur brightness adjust karna shamil hai. Permission wali images use karein.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>Image Editing mane digital image re paribartana kari tara appearance unnata kariba. Ethire cropping, resizing ebam brightness badalaiba rahithae. Anumati thiba image byabahara karantu.</p>
+                        <h4>Practical Example</h4>
+                        <p>Crop a picture you own and adjust its brightness.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What is image editing? <strong>Answer:</strong> Changing a digital image.</li>
+                            <li>What does cropping do? <strong>Answer:</strong> Removes unwanted parts of an image.</li>
+                            <li>Name one image adjustment. <strong>Answer:</strong> Brightness.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 9: Video Editing Basics</summary>
+                        <h4>English Explanation</h4>
+                        <p>Video editing means arranging and improving video clips to create a complete video. It may include trimming clips, adding titles, adjusting audio and using transitions.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Video Editing ka matlab video clips ko arrange aur improve karke complete video banana hai. Ismein clips trim karna, titles add karna aur audio adjust karna shamil hai.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>Video Editing mane video clip ku sajadi ebam unnata kari sampurna video tiari kariba. Ethire clip trim, title jog ebam audio adjust kariba rahithae.</p>
+                        <h4>Practical Example</h4>
+                        <p>Combine short clips from a school project and add a title.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What is video editing? <strong>Answer:</strong> Arranging and improving video clips.</li>
+                            <li>What does trimming mean? <strong>Answer:</strong> Removing unwanted parts of a clip.</li>
+                            <li>What is a transition? <strong>Answer:</strong> An effect connecting one scene to another.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 10: Building a Creative Portfolio</summary>
+                        <h4>English Explanation</h4>
+                        <p>A creative portfolio is a collection of your best work that shows your skills and progress. It may include logos, posters, illustrations and videos.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Creative Portfolio aapke best creative work ka collection hota hai jo aapki skills aur progress dikhata hai. Ismein logos, posters, illustrations aur videos ho sakte hain.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>Creative Portfolio hela apananka bhala creative work ra sangraha, jaha apananka skill ebam unnati ku dekhaithe. Ethire logo, poster, illustration ebam video rahipare.</p>
+                        <h4>Mini Project</h4>
+                        <p>Create a small portfolio with three original designs. Give each design a title and short description.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What is a creative portfolio? <strong>Answer:</strong> A collection of work showing creative skills.</li>
+                            <li>Name one item you can include. <strong>Answer:</strong> A poster.</li>
+                            <li>Why is a portfolio useful? <strong>Answer:</strong> It helps present your work and skills.</li>
+                        </ol>
+                    </details>
+
+                    <p><strong>Congratulations!</strong> You have completed all 10 Creative Skills lessons.</p>
+                </div>
+            </details>
+
+            <!-- BUSINESS SKILLS -->
+            <details class="card">
+                <summary>
+                    <h3>📈 Business Skills</h3>
+                    <p>Learn business, communication and entrepreneurship.</p>
+                </summary>
+
+                <div class="lesson-content">
+                    <h3>Business Learning Path</h3>
+                    <p>Complete these 10 beginner-friendly lessons in English, Hindi and Odia.</p>
+
+                    <ol>
+                        <li>Introduction to Business</li>
+                        <li>Communication Skills</li>
+                        <li>Marketing Basics</li>
+                        <li>Entrepreneurship</li>
+                        <li>Financial Literacy</li>
+                        <li>Understanding Customers</li>
+                        <li>Business Planning</li>
+                        <li>Branding and Customer Value</li>
+                        <li>Teamwork and Leadership</li>
+                        <li>Business Ethics and Responsible Decisions</li>
+                    </ol>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 1: Introduction to Business</summary>
+                        <h4>English Explanation</h4>
+                        <p>A business is an activity in which people provide products or services to customers. Businesses aim to solve problems, meet needs and earn income.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Business ek aisi activity hai jisme log customers ko products ya services provide karte hain. Business ka purpose logon ki zarooraton ko poora karna aur income earn karna hota hai.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>Business hela eka karya, jeunthire loka mane customer mananku product ba service pradan karanti. Ehar uddeshya lokanka abasyakata purana kariba ebam aya kariba.</p>
+                        <h4>Practical Example</h4>
+                        <p>A small shop sells notebooks, pens and other school supplies to students.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What is a business? <strong>Answer:</strong> An activity that provides products or services.</li>
+                            <li>Who buys products from a business? <strong>Answer:</strong> Customers.</li>
+                            <li>Name one type of business. <strong>Answer:</strong> A grocery shop.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 2: Communication Skills</summary>
+                        <h4>English Explanation</h4>
+                        <p>Communication means sharing information, ideas and feelings with other people. Good communication includes speaking clearly, listening carefully and writing understandable messages.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Communication ka matlab doosre logon ke saath information, ideas aur feelings share karna hai. Achhi communication mein clearly bolna, dhyan se sunna aur samajhne layak message likhna shamil hai.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>Communication mane anya lokanka sahita information, idea ebam bhabana share kariba. Bhala communication pain spashta bhabare katha kahiba, dhyana dei suniba ebam bujhiba bhali message lekhiba darkar.</p>
+                        <h4>Practical Example</h4>
+                        <p>A shopkeeper politely explains the price and features of a product to a customer.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What is communication? <strong>Answer:</strong> Sharing information and ideas.</li>
+                            <li>Name one important communication skill. <strong>Answer:</strong> Active listening.</li>
+                            <li>Why should we speak clearly? <strong>Answer:</strong> To make our message understandable.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 3: Marketing Basics</summary>
+                        <h4>English Explanation</h4>
+                        <p>Marketing is the process of understanding customers and informing them about products or services. It includes advertising, promotion, pricing and understanding customer needs.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Marketing ka matlab customers ki zarooraton ko samajhna aur unhe products ya services ke baare mein batana hai. Ismein advertising, promotion aur pricing shamil hain.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>Marketing mane customer mananka abasyakata bujhiba ebam semananku product ba service bishayare janaiba. Ethire advertising, promotion ebam pricing rahithae.</p>
+                        <h4>Practical Example</h4>
+                        <p>A bakery shares pictures of its cakes and prices on its notice board to inform customers.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What is marketing? <strong>Answer:</strong> Informing and attracting customers to products or services.</li>
+                            <li>What is advertising? <strong>Answer:</strong> Sharing information to promote a product or service.</li>
+                            <li>Why is marketing useful? <strong>Answer:</strong> It helps customers learn about products.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 4: Entrepreneurship</summary>
+                        <h4>English Explanation</h4>
+                        <p>Entrepreneurship means identifying an opportunity, developing an idea and organizing resources to create a business or project. An entrepreneur tries to solve problems and create value.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Entrepreneurship ka matlab kisi opportunity ko pehchanna, idea develop karna aur resources ka use karke business ya project shuru karna hai. Entrepreneur problems solve karke value create karne ki koshish karta hai.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>Entrepreneurship mane eka sujoga chinhiba, idea bikasha kariba ebam resource byabahara kari business ba project arambha kariba. Entrepreneur samasya samadhana kari mulya srusti karibaku chesta kare.</p>
+                        <h4>Practical Example</h4>
+                        <p>A student notices that classmates need affordable notebooks and plans a small stationery project.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What is entrepreneurship? <strong>Answer:</strong> Creating and developing a business idea.</li>
+                            <li>Who is an entrepreneur? <strong>Answer:</strong> A person who starts or develops a business.</li>
+                            <li>Name one quality of an entrepreneur. <strong>Answer:</strong> Creativity.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 5: Financial Literacy</summary>
+                        <h4>English Explanation</h4>
+                        <p>Financial literacy means understanding how to manage money. It includes budgeting, saving, spending wisely and understanding basic financial concepts.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Financial Literacy ka matlab paise ko sahi tarike se manage karna samajhna hai. Ismein budget banana, saving karna aur soch-samajhkar kharch karna shamil hai.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>Financial Literacy mane tanka ku thik bhabare parichalana kariba bishayare bujhiba. Ethire budget tiari, sanchaya ebam bhabichinti kharcha kariba rahithae.</p>
+                        <h4>Practical Example</h4>
+                        <p>A student prepares a monthly budget to plan expenses for books, stationery and other needs.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What is financial literacy? <strong>Answer:</strong> Understanding how to manage money.</li>
+                            <li>What is a budget? <strong>Answer:</strong> A plan for income and expenses.</li>
+                            <li>Why is saving important? <strong>Answer:</strong> It helps prepare for future needs.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 6: Understanding Customers</summary>
+                        <h4>English Explanation</h4>
+                        <p>Customers are people who buy or use products and services. Understanding customers means learning about their needs, preferences, questions and feedback.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Customers woh log hote hain jo products ya services kharidte ya use karte hain. Unhe samajhne ka matlab unki zarooraton, pasand aur feedback ko jaanana hai.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>Customer mane sehi loka, jeunmane product ba service kinanti ba byabahara karanti. Customer ku bujhiba mane tankara abasyakata, pasanda ebam feedback janiba.</p>
+                        <h4>Practical Example</h4>
+                        <p>A bookstore asks students which types of books they would like to find in the shop.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>Who is a customer? <strong>Answer:</strong> A person who buys or uses a product or service.</li>
+                            <li>What is customer feedback? <strong>Answer:</strong> A customer's opinion or response.</li>
+                            <li>Why should businesses understand customers? <strong>Answer:</strong> To serve their needs better.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 7: Business Planning</summary>
+                        <h4>English Explanation</h4>
+                        <p>A business plan explains a business idea, its goals, customers, resources and expected costs. Planning helps people organize their work and make informed decisions.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Business Plan ek document hai jisme business idea, goals, customers, resources aur expected costs ki jankari hoti hai. Planning se kaam organize karne mein madad milti hai.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>Business Plan hela eka document, jeunthire business idea, lakshya, customer, resource ebam anumanita kharcha bishayare lekha jae. Planning dwara kama ku sajadi kariba sahaja hue.</p>
+                        <h4>Practical Example</h4>
+                        <p>Before starting a school stationery stall, a student lists the products, estimated costs and possible customers.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What is a business plan? <strong>Answer:</strong> A document describing a business idea and how it may work.</li>
+                            <li>Name one part of a business plan. <strong>Answer:</strong> Business goals.</li>
+                            <li>Why is planning useful? <strong>Answer:</strong> It helps organize tasks and resources.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 8: Branding and Customer Value</summary>
+                        <h4>English Explanation</h4>
+                        <p>A brand is the identity of a business, product or service. It may include a name, logo, design and reputation. Customer value means the usefulness and benefits customers receive.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Brand kisi business, product ya service ki pehchaan hoti hai. Ismein name, logo, design aur reputation shamil ho sakte hain. Customer Value ka matlab customer ko milne wale fayde hain.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>Brand hela eka business, product ba service ra parichaya. Ethire name, logo, design ebam reputation rahipare. Customer Value mane customer ku miluthiba upakara ebam labha.</p>
+                        <h4>Practical Example</h4>
+                        <p>A local bakery uses the same name and logo on its packaging so customers can recognize it.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What is a brand? <strong>Answer:</strong> The identity of a business or product.</li>
+                            <li>Name one element of a brand. <strong>Answer:</strong> A logo.</li>
+                            <li>What is customer value? <strong>Answer:</strong> The benefits a customer receives.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 9: Teamwork and Leadership</summary>
+                        <h4>English Explanation</h4>
+                        <p>Teamwork means working together to achieve a shared goal. Leadership means guiding and supporting a group. Good team members communicate, respect different ideas and share responsibilities.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Teamwork ka matlab ek common goal ke liye milkar kaam karna hai. Leadership ka matlab group ko guide aur support karna hai. Achhe team members ek-doosre ki baat sunte hain aur responsibilities share karte hain.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>Teamwork mane eka sadharana lakshya pain milimisi kama kariba. Leadership mane eka group ku margadarshana ebam sahajya kariba. Bhala team member mane parasparaku samman dianti ebam dayitwa bantanti.</p>
+                        <h4>Practical Example</h4>
+                        <p>A school project team divides research, writing and presentation tasks among its members.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What is teamwork? <strong>Answer:</strong> Working together towards a shared goal.</li>
+                            <li>What is leadership? <strong>Answer:</strong> Guiding and supporting a group.</li>
+                            <li>Name one quality of a good team member. <strong>Answer:</strong> Cooperation.</li>
+                        </ol>
+                    </details>
+
+                    <details class="lesson-item">
+                        <summary>Lesson 10: Business Ethics and Responsible Decisions</summary>
+                        <h4>English Explanation</h4>
+                        <p>Business ethics means following honest and fair principles while making business decisions. Responsible businesses respect customers, employees, laws and the environment.</p>
+                        <h4>Hindi Explanation</h4>
+                        <p>Business Ethics ka matlab business decisions lete waqt imaandari aur fairness ke principles follow karna hai. Responsible business customers, employees, laws aur environment ka respect karta hai.</p>
+                        <h4>Odia Explanation</h4>
+                        <p>Business Ethics mane business decision neba samayare satyata ebam nyaya ra niyama palana kariba. Dayitwapurna business customer, employee, ain ebam paribesha ku samman kare.</p>
+                        <h4>Practical Example</h4>
+                        <p>A shop clearly displays the correct price of a product and gives customers accurate information.</p>
+                        <h4>Practice Questions</h4>
+                        <ol>
+                            <li>What is business ethics? <strong>Answer:</strong> Honest and fair principles in business.</li>
+                            <li>Should a business give customers correct information? <strong>Answer:</strong> Yes.</li>
+                            <li>Name one responsibility of a business. <strong>Answer:</strong> Respecting customers and following laws.</li>
+                        </ol>
+                    </details>
+
+                    <p><strong>Congratulations!</strong> You have completed all 10 Business Skills lessons.</p>
+                </div>
+            </details>
+
+        </div>
+    </section>
+
+    <!-- PRACTICE -->
+    <section id="practice" class="section">
+        <h2>Practice &amp; Improve</h2>
+        <p>Practice what you learn and improve your skills every day.</p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>🧠 Knowledge Practice</h3>
+                <p>Test your understanding of different subjects.</p>
+            </div>
+
+            <div class="card">
+                <h3>⌨️ Skill Practice</h3>
+                <p>Improve your practical and digital skills.</p>
+            </div>
+
+            <div class="card">
+                <h3>🎯 Daily Challenges</h3>
+                <p>Build consistency through small learning challenges.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <h2>Build Amazing Projects</h2>
+        <p>Showcase what you can create.</p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>🌐 Personal Website</h3>
+                <p>Create your own personal website using HTML and CSS.</p>
+            </div>
+
+            <div class="card">
+                <h3>🤖 AI Exploration</h3>
+                <p>Explore how AI tools can help solve everyday problems.</p>
+            </div>
+
+            <div class="card">
+                <h3>💡 Creative Project</h3>
+                <p>Build something original using your creativity.</p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- PROFILE PAGE -->
+<section id="profile-page" hidden>
+    <div class="profile-container">
+        <h2>My Profile Dashboard</h2>
+
+        <div class="profile-avatar">
+            <div id="profile-avatar-placeholder">👤</div>
+
+            <img
+                id="profile-photo"
+                src=""
+                alt="Profile Photo"
+                hidden
+            >
+        </div>
+
+        <label for="photo-upload">Upload Profile Photo</label>
+
+        <input
+            type="file"
+            id="photo-upload"
+            accept="image/*"
+        >
+
+        <h3 id="profile-name">Your Name</h3>
+
+        <div class="profile-form">
+            <label for="user-name">Full Name</label>
+            <input
+                type="text"
+                id="user-name"
+                placeholder="Enter your name"
+            >
+
+            <label for="user-email">Email Address</label>
+            <input
+                type="email"
+                id="user-email"
+                placeholder="Enter your email"
+            >
+
+            <label for="user-skills">My Skills</label>
+            <textarea
+                id="user-skills"
+                placeholder="Write your skills"
+            ></textarea>
+
+            <button id="save-profile">Save Profile</button>
+        </div>
+
+        <button id="back-home">Back to Home</button>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <h3>SKILLVERSE</h3>
+    <p>Learn. Create. Grow.</p>
+    <p>&copy; 2026 SKILLVERSE. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

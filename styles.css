@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #080916;
+  color: #f5f6ff;
+  line-height: 1.6;
+}
+
+header {
+  min-height: 90px;
+  padding: 20px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #252640;
+}
+
+.logo h1 {
+  font-size: 29px;
+  font-weight: 900;
+  letter-spacing: -1px;
+  background: linear-gradient(90deg, #9470ff, #39dcca);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.logo p {
+  font-size: 13px;
+  color: #aeb2ca;
+}
+
+button {
+  cursor: pointer;
+}
+
+.profile-btn {
+  background: transparent;
+  border: 1px solid #9470ff;
+  border-radius: 30px;
+  color: white;
+  padding: 12px 25px;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.25s;
+}
+
+.profile-btn:hover {
+  background: #9470ff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  padding: 18px 5%;
+  border-bottom: 1px solid #252640;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #aeb2ca;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #39dcca;
+}
+
+/* HERO */
+.hero {
+  padding: 90px 6% 75px;
+  background:
+    radial-gradient(ellipse at 85% 80%, #282052 0%, transparent 45%),
+    #080916;
+}
+
+.hero h2 {
+  font-size: clamp(38px, 7vw, 72px);
+  line-height: 1.1;
+  max-width: 850px;
+  letter-spacing: -2px;
+  background: linear-gradient(90deg, #ffffff, #39dcca);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero p {
+  color: #aeb2ca;
+  font-size: 20px;
+  max-width: 650px;
+  margin: 24px 0 32px;
+}
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(110deg, #9470ff, #5540df);
+  color: white;
+  padding: 16px 32px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 10px 35px #6748dd44;
+  transition: transform 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* SECTIONS & CARDS */
+.section {
+  padding: 65px 6%;
+}
+
+.section h2 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.section > p {
+  color: #aeb2ca;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+  margin-top: 25px;
+}
+
+.card {
+  background: linear-gradient(145deg, #1b1d38, #111326);
+  border: 1px solid #303252;
+  border-radius: 20px;
+  padding: 26px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #9470ff;
+}
+
+.card h3 {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #aeb2ca;
+}
+
+/* LESSONS ACCORDION */
+details.card summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+details.card summary::-webkit-details-marker {
+  display: none;
+}
+
+.lesson-content {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid #303252;
+}
+
+.lesson-content ol,
+.lesson-content ul {
+  margin: 10px 0 18px 22px;
+  color: #d5d7ef;
+}
+
+.lesson-item {
+  background: #101225;
+  border: 1px solid #2b2e52;
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin: 12px 0;
+}
+
+.lesson-item summary {
+  font-weight: bold;
+  color: #39dcca;
+  cursor: pointer;
+}
+
+.lesson-item h4 {
+  color: #c4a5ff;
+  margin: 14px 0 6px;
+  font-size: 15px;
+}
+
+.lesson-item pre {
+  background: #070812;
+  border: 1px solid #2d3054;
+  border-radius: 8px;
+  padding: 12px;
+  overflow-x: auto;
+  margin: 10px 0;
+  color: #39dcca;
+  font-size: 13px;
+}
+
+/* PROFILE PAGE */
+#profile-page {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #080916, #171332, #24154a);
+  color: white;
+}
+
+#profile-page[hidden] {
+  display: none !important;
+}
+
+#sv-auth-panel {
+  max-width: 500px;
+  margin: 0 auto 24px !important;
+}
+
+.profile-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px 24px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(139, 92, 246, 0.5);
+  border-radius: 22px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.profile-container h2 {
+  color: #c4a5ff;
+  margin-bottom: 20px;
+}
+
+.profile-avatar {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 16px;
+  display: grid;
+  place-items: center;
+  background: #34245e;
+  border-radius: 50%;
+  font-size: 42px;
+  overflow: hidden;
+  border: 2px solid #9470ff;
+}
+
+#profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-container label {
+  display: block;
+  text-align: left;
+  margin: 16px 0 6px;
+  color: #d8ccff;
+  font-size: 14px;
+}
+
+.profile-container input[type="text"],
+.profile-container input[type="email"],
+.profile-container textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 9px;
+  border: 1px solid #62518e;
+  background: #111025;
+  color: white;
+  font-family: inherit;
+}
+
+.profile-container textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+#photo-upload {
+  width: 100%;
+  margin: 8px 0 14px;
+  color: #d8ccff;
+}
+
+#profile-name {
+  margin: 10px 0 18px;
+  color: #39dcca;
+}
+
+#save-profile {
+  width: 100%;
+  margin-top: 22px;
+  padding: 14px;
+  background: linear-gradient(90deg, #7c3aed, #2563eb);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#back-home {
+  width: 100%;
+  margin-top: 14px;
+  padding: 12px 22px;
+  background: #252044;
+  color: white;
+  border: 1px solid #8b5cf6;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* CERTIFICATE BUTTON */
+#print-certificate {
+  margin-top: 14px;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #9470ff, #39dcca);
+  color: #080916;
+  font-weight: bold;
+}
+
+#print-certificate:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px 15px;
+  color: #aeb2ca;
+  border-top: 1px solid #252640;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 16px 5%;
+  }
+
+  .logo h1 {
+    font-size: 23px;
+  }
+
+  .profile-btn {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+
+  .hero {
+    padding-top: 60px;
+  }
+
+  .hero p {
+    font-size: 17px;
+  }
+
+  .section h2 {
+    font-size: 28px;
+  }
+}
